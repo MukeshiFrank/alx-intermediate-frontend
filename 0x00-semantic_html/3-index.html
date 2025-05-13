@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semantic HTML form with ARIA roles for accessibility">
+    <meta name="keywords" content="HTML, Accessibility, ARIA, Forms, SEO">
+    <meta name="author" content="Your Name">
+    <title>Enhanced Form Accessibility</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="#" method="POST" aria-labelledby="form-title" role="form">
+                <h2 id="form-title">Please Fill Out the Form</h2>
+
+                <!-- Name Field -->
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" aria-required="true">
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" aria-required="true">
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" aria-label="Submit the form">Submit</button>
+                </div>
+
+                <!-- Live Region for Alerts -->
+                <div aria-live="polite" role="alert"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
